@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_friend"
+    android:name="com.garasipelosok.softgainapi.Barang.BarangFragmentList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Barang.BarangFragmentList"
+    tools:listitem="@layout/fragment_barang_list"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="20dp"
+            android:lines="2"
+            android:text="title" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="20dp"
+            android:lines="2"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:paddingTop="20dp"
+            android:lines="2"
+            android:src="@drawable/ic_edit"
+            android:layout_alignParentRight="true" />
+
+        <EditText
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/id" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+<!--    android:layout_marginLeft="16dp"-->
+<!--    android:layout_marginRight="16dp"-->
